@@ -5,12 +5,14 @@
 */
 
 .header {
-    
+    position: sticky;
+    top: calc(var(--height-header) * -1);
+    z-index: 999;
 }
 
 .header__top {
     background-color: var(--background-primary);
-    opacity: .9;
+    opacity: .8;
     font-weight: 600;
     height: var(--height-header);
 }
@@ -101,7 +103,7 @@
     position: absolute;
     display: flex;
     align-items: center;
-    width: 350px;
+    width: 450px;
     height: 100%;
     margin-left: -20px;
     z-index: 1;
@@ -193,4 +195,20 @@
     background-color: var(--primary-color);
     color: var(--text-dark-color);
     transition: .3s;
+}
+
+/*
+
+    ? BANNER
+
+*/
+
+.banner {
+    position: relative;
+    top: calc(var(--height-header) * -2);
+    background-image: url('../img/banner-1.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
 }
