@@ -1,0 +1,73 @@
+/*
+    ? HEADER
+*/
+
+.header {
+    
+}
+
+.header__top {
+    background-color: var(--background-primary);
+    opacity: .9;
+    font-weight: 600;
+    height: 87px;
+}
+
+.header__top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header__offer {
+    color: var(--sub-title-light-color);
+    font-size: 1.4rem;
+}
+
+.header__offer-day {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--title-dark-color);
+    opacity: 1;
+    display: inline-block;
+    padding: 10px 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header__follow {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--title-light-color);
+}
+
+.header__social {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.header__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 4px;
+    width: 40px;
+    height: 30px;
+    background-color: var(--background-second);
+    font-size: 1.3rem;
+    transition: .3s;
+    color: var(--primary-color);
+}
+
+.header__social-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__icon  {
+
+}

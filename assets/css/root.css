@@ -2,13 +2,15 @@
 
 :root {
     --primary-color: #E9A401;
-    --background-primary-color: #242533;
-    --background-second-color: #F7F7F7;
+    --background-primary: #242533;
+    --background-second: #313039;
+    --background-grey: #F7F7F7;
     --background-img-color: #141217;
     --background-footer-top: #1D191F;
     --background-footer-bottom: #151316;
-    --sub-title-color: #CCCCCC;
-    --title-color: #1B1320;
+    --sub-title-light-color: #CCCCCC;
+    --title-dark-color: #1B1320;
+    --title-light-color: #fff;
     --font-family: 'Oxanium', sans-serif;
 }
 
