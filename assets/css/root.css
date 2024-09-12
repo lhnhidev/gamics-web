@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #E9A401;
+    /* --primary-color: #fd3a4a; */
     --background-primary: #242533;
     --background-second: #313039;
     --background-grey: #F7F7F7;
@@ -11,7 +12,13 @@
     --sub-title-light-color: #CCCCCC;
     --title-dark-color: #1B1320;
     --title-light-color: #fff;
+    --text-light-color: #fff;
+    --text-dark-color: #1B1320;
     --font-family: 'Oxanium', sans-serif;
+    --height-header: 87px;
+    --shadow-header: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    --shadow-btn: 0px 2px 8px 0px hsla(0, 0%, 0%, 0.2),
+                inset 0px 2px 8px 0px hsla(0, 0%, 0%, 0.4);
 }
 
 /* body.dark-mode {
