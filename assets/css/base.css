@@ -38,6 +38,15 @@ body {
     }
 }
 
+@keyframes blink {
+    form {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .animate__animated.animate__pulse {
     animation-duration: 1.5s;
 }
