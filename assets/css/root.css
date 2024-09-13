@@ -16,9 +16,12 @@
     --text-dark-color: #1B1320;
     --font-family: 'Oxanium', sans-serif;
     --height-header: 77px;
+    --height-banner: 110vh;
     --shadow-header: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     --shadow-btn: 0px 2px 8px 0px hsla(0, 0%, 0%, 0.2),
                 inset 0px 2px 8px 0px hsla(0, 0%, 0%, 0.4);
+    --scale-banner: 1.2;
+    --time-animation-banner: 1.5s;
 }
 
 /* body.dark-mode {

@@ -2,8 +2,9 @@ html {
     font-size: 62.5%;
 }
 
-* {
+body {
     font-family: var(--font-family);
+    overflow-x: hidden;
 }
 
 .skew-background {
@@ -22,4 +23,21 @@ html {
     transform: skewX(-16deg);
     background-color: var(--primary-color);
     z-index: -1;
+}
+
+/* ? CSS for tranform/keyframe */
+
+@keyframes blurAndScale {
+    form {
+        filter: blur(5px);
+        transform: scale(1.2);
+    }
+    to {
+        filter: unset;
+        transform: scale(1);
+    }
+}
+
+.animate__animated.animate__pulse {
+    animation-duration: 1.5s;
 }
