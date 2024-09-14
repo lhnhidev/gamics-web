@@ -2,43 +2,41 @@
         ! Render slogans in Banner
     */ 
 
-const slogans = [
-    'Chiến thuật đỉnh cao, nhân vật định hình chiến thắng',
-    'Chiến đấu cùng đồng đội, chiến thắng bằng chiến thuật'
-];
+import { slogans, pauseTimeToDeleting, pauseTimeToTyping, speed } from './module.js';
+
+let deleting = false;
+let indexText = 0;
+let indexChar = 0;
 const elementSlogan = document.querySelector('#slogan');
-var i = 0;
-var j = 0;
-var deleting = false;
 
 function type() {
-    const currentSlogan = slogans[i];
-    elementSlogan.textContent = currentSlogan.slice(0, j);
+    const currentSlogan = slogans[indexText];
+    elementSlogan.textContent = currentSlogan.slice(0, indexChar);
 
-    if (!deleting && j < currentSlogan.length) { 
+    if (!deleting && indexChar < currentSlogan.length) { 
         /* 
-            TODO: Nếu trong trạng thái gõ (!deleting) thì j tăng
+            TODO: Nếu trong trạng thái gõ (!deleting) thì indexChar tăng
         */
-        j++;
-        setTimeout(type, 70);
+        indexChar++;
+        setTimeout(type, speed);
     }
-    else if (!deleting && j === currentSlogan.length) {
+    else if (!deleting && indexChar === currentSlogan.length) {
         /* 
             TODO: Nếu gõ xong, đợi 5s chuyển sang xóa
         */
         setTimeout(() => {
             deleting = true;
             type();
-        }, 5000);
+        }, pauseTimeToDeleting);
     }
-    else if (deleting && j > 0) {
+    else if (deleting && indexChar > 0) {
         /* 
-            TODO: Nếu trong trạng thái xóa (deleting) thì j giảm
+            TODO: Nếu trong trạng thái xóa (deleting) thì indexChar giảm
         */
-        j--;
-        setTimeout(type, 70);
+        indexChar--;
+        setTimeout(type, speed);
     }
-    else if (deleting && j === 0) {
+    else if (deleting && indexChar === 0) {
         /*
             TODO: Nếu xóa xong, đợi 0.7s chuyển sang trạng thái gõ
         */
@@ -46,13 +44,13 @@ function type() {
             deleting = false;
 
             /*
-                TODO: i + 1 có nghĩa là chọn từ tiếp theo.
-                TODO: % slogans.length có nghĩa là khi mà i tăng vượt qua slogans.length nó sẽ tự về 0
+                TODO: indexText + 1 có nghĩa là chọn từ tiếp theo.
+                TODO: % slogans.length có nghĩa là khi mà indexText tăng vượt qua slogans.length nó sẽ tự về 0
             */
 
-            i = (i + 1) % slogans.length;
+            indexText = (indexText + 1) % slogans.length;
             type();
-          }, 700);
+          }, pauseTimeToTyping);
     }
 }
 
