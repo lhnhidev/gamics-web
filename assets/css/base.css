@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: var(--font-family);
     overflow-x: hidden;
 }
@@ -25,6 +26,14 @@ body {
     z-index: -1;
 }
 
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
 /* ? CSS for tranform/keyframe */
 
 @keyframes blurAndScale {
@@ -44,6 +53,15 @@ body {
     }
     to {
         opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 

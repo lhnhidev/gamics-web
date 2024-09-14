@@ -7,7 +7,7 @@
 .header {
     position: sticky;
     top: calc(var(--height-header) * -1);
-    z-index: 999;
+    z-index: 5;
 }
 
 .header__top {
@@ -195,6 +195,68 @@
     background-color: var(--primary-color);
     color: var(--text-dark-color);
     transition: .3s;
+}
+
+/*
+
+    ? SEARCH
+
+*/
+
+.find {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    opacity: 0;
+}
+
+.find__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    height: 100%;
+    background-color: var(--find-background);
+    opacity: .8;
+}
+
+.find__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.find__input {
+    width: 600px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--border-bottom-search-color);
+    padding: 20px;
+    padding-right: 70px;
+    font-size: 3.5rem;
+    outline: none;
+    color: var(--text-light-color);
+}
+
+.find__input::placeholder {
+    color: var(--text-light-color);
+    opacity: .6;
+}
+
+.find__icon {
+    border: none;
+    margin-right: 20px;
+    margin-left: -70px;
+    background: transparent;
+    font-size: 5rem;
+    color: var(--primary-color);
 }
 
 /*
