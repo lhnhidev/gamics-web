@@ -35,7 +35,7 @@
     color: var(--title-dark-color);
     opacity: 1;
     display: inline-block;
-    padding: 10px 18px;
+    padding: 6px 14px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -116,7 +116,7 @@
 .header__logo-link {
     color: var(--text-light-color);
     text-decoration: none;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     display: block;
     transition: .3s;
@@ -140,7 +140,7 @@
 }
 
 .header__list-item {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -279,7 +279,7 @@
     /* background-image: linear-gradient(#00000015, #00000090), url(../img/banner-1.jpeg); */
     /* background-image: linear-gradient(#007bff25, #ce00605c), url(../img/banner-1.jpeg); */
     
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -298,24 +298,33 @@
     transform: translate(-50%, -50%);
 }
 
-.banner__title {
+.banner__img {
     display: block;
     margin: auto;
-    transform: scale(1.4);
+    /* transform: scale(1); */
+    width: 350px;
 }
 
 .banner__slogan {
-    margin-top: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
     color: var(--text-light-color);
-    font-size: 2.8rem;
-    text-align: left;
+    font-size: 2.4rem;
     text-shadow: 2px 2px 5px var(--text-dark-color);
 }
 
 .banner__slogan #slogan {
-    text-align: left;
-    width: 711px;
-    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.banner__slogan #cursor {
+    height: 30px;
+    width: 3px;
+    margin-left: 4px;
+    background-color: var(--text-light-color);
+    box-shadow: 2px 2px 2px #363636;
 }
 
 .banner__button {
@@ -332,7 +341,7 @@
 .banner__button:hover {
     transition: ease .5s;
     cursor: pointer;
-    
+    opacity: .8;
 }
 
 .banner__button:hover > [class*="banner__btn"] {
@@ -346,8 +355,8 @@
     display: block;
     color: var(--text-light-color);
     font-weight: 600;
-    padding: 15px 25px;
-    font-size: 2.8rem;
+    padding: 10px 22px;
+    font-size: 2.4rem;
     border: none;
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;

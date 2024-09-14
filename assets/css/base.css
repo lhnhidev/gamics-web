@@ -68,6 +68,12 @@ body::-webkit-scrollbar-thumb {
         opacity: 1;
     }
     to {
+        opacity: .6;
+    }
+    to {
+        opacity: .3;
+    }
+    to {
         opacity: 0;
     }
 }
@@ -83,4 +89,9 @@ body::-webkit-scrollbar-thumb {
 
 .animate__animated.animate__pulse {
     animation-duration: 1.5s;
+}
+
+.keyframe-blink {
+    animation: blink 1s ease-in-out infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
