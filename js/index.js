@@ -21,7 +21,13 @@ function type() {
         setTimeout(type, speed);
     }
     else if (!deleting && indexChar === currentSlogan.length) {
-        
+        /* 
+            TODO: Nếu gõ xong, đợi 5s chuyển sang xóa
+        */
+            setTimeout(() => {
+                deleting = true;
+                type();
+            }, pauseTimeToDeleting);
     }
     else if (deleting && indexChar > 0) {
         /* 
