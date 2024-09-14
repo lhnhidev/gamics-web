@@ -6,6 +6,7 @@ body {
     position: relative;
     font-family: var(--font-family);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .skew-background {
@@ -32,6 +33,21 @@ body {
 
 .hidden {
     display: none;
+}
+
+/* ? CSS for scroll bar */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--background-primary);
+    opacity: .7;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
 }
 
 /* ? CSS for tranform/keyframe */
