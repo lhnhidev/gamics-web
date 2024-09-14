@@ -37,20 +37,7 @@ function type() {
         setTimeout(type, speed);
     }
     else if (deleting && indexChar === 0) {
-        /*
-            TODO: Nếu xóa xong, đợi 0.7s chuyển sang trạng thái gõ
-        */
-        setTimeout(() => {
-            deleting = false;
-
-            /*
-                TODO: indexText + 1 có nghĩa là chọn từ tiếp theo.
-                TODO: % slogans.length có nghĩa là khi mà indexText tăng vượt qua slogans.length nó sẽ tự về 0
-            */
-
-            indexText = (indexText + 1) % slogans.length;
-            type();
-          }, pauseTimeToTyping);
+        
     }
 }
 
