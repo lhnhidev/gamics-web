@@ -87,6 +87,15 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@keyframes autoRun {
+    form {
+        left: 100%;
+    }   
+    to {
+        left: calc(var(--width) * -1);
+    }
+}
+
 .animate__animated.animate__pulse {
     animation-duration: 1.5s;
 }
