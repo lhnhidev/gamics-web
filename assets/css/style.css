@@ -374,3 +374,44 @@
     transition: ease .4s;
 }
 
+/*
+
+    ? SLIDER
+
+*/
+
+.slider {
+    padding: 50px 0px;
+    background-color: var(--background-second);
+    height: var(--height);
+}
+
+.slider__top {
+    padding: 20px 200px;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    background-color: var(--primary-color);
+}
+
+.slider__team-list {
+    display: flex;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slider__team-item {
+    /* margin-left: 30px; */
+    margin: 10px 50px 10px 0px;
+    padding: 12px;
+    border-radius: 50%;
+    outline-offset: 2px;
+    outline: 2px solid var(--background-primary);
+    background-color: var(--background-primary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.slider__team-item .slider__team-img {
+    width: var(--size);
+}
