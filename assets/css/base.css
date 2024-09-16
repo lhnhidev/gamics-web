@@ -1,12 +1,12 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     position: relative;
     font-family: var(--font-family);
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 .skew-background {

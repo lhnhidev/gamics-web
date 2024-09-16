@@ -47,3 +47,11 @@ const slogans = data['english'].sliderSlogan;
 var pauseTimeToDeleting = 2000,
     pauseTimeToTyping = 500,
     speed = 60;
+
+    /**
+     *  ! Variable of play Video in Live
+     */
+export {imgOfVideo, video};
+
+var imgOfVideo = document.querySelector('.live__thumbnail'),
+    video = document.querySelector('.live__frame');

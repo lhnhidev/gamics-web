@@ -340,6 +340,13 @@
     animation-fill-mode: forwards;
 }
 
+.banner__home {
+    position: absolute;
+    top: var(--height-header);
+    width: 0;
+    height: 0;
+}
+
 .banner__over {
     position: absolute;
     top: calc(50% + 70px);
@@ -431,9 +438,7 @@
 */
 
 .slider {
-    background: linear-gradient(#3c1930e7, #3C1930e7) ,url('../background/we-are-valorant.webp');
-    height: var(--height);
-    height: 500px;
+
 }
 
 .slider__main {
@@ -500,4 +505,72 @@
 
 .slider__team-item .slider__team-img {
     width: 100%;
+}
+
+/*
+
+    ? LIVE
+
+*/
+
+.live {
+    position: relative;
+    height: 115vh;
+    padding: 70px 0px;
+    background-image: linear-gradient(#3c1930ef, #3C1930ef) ,url('../img/hq720.webp');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.live__main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.live__header { 
+    margin-top: 15px;
+    margin-bottom: 60px;
+    color: var(--text-light-color);
+}
+
+.live__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.live__header span {
+    color: var(--primary-color);
+}
+
+.live__header img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.live__video {
+    position: relative;
+    width: 800px;
+    height: 450px;
+}
+
+.live__thumbnail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.live__frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }

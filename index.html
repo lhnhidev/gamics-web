@@ -61,10 +61,10 @@
                                 <a href="#home" class="skew-background" style="--skew: -16deg;">Home</a>
                             </li>
                             <li class="header__list-item">
-                                <a href="#live" class="skew-background" style="--skew: -16deg;">Game info</a>
+                                <a href="#live" class="skew-background" style="--skew: -16deg;">Live</a>
                             </li>
                             <li class="header__list-item">
-                                <a href="#features" class="skew-background" style="--skew: -16deg;">Live</a>
+                                <a href="#gameInfo" class="skew-background" style="--skew: -16deg;">Game info</a>
                             </li>
                             <li class="header__list-item">
                                 <a href="#shop" class="skew-background" style="--skew: -16deg;">Shop</a>
@@ -113,9 +113,10 @@
 
     </div>
 
-    <div class="banner">
+    <div class="banner" id="contact">
 
         <div class="banner__under animate__animated animate__pulse"></div>
+        <div class="banner__home" id="home"></div>
 
         <div class="banner__over">
 
@@ -136,7 +137,7 @@
         </div>
     </div>
 
-    <div class="slider" style="--height: 300px;">
+    <section class="slider" style="--height: 300px;">
 
         <div class="slider__main">
 
@@ -235,8 +236,28 @@
 
         </div>
 
+    </section>
 
-    </div>
+    <section class="live" id="live">
+
+        <div class="container">
+
+            <div class="live__main">
+                
+                <div class="live__header">
+                    <h2 class="live__title">Watch live <span>match</span></h2>
+                    <img src="./assets/img/title-underline.png" alt="">
+                </div>
+    
+                <div class="live__video">
+                    <iframe class="live__frame" src="https://www.youtube-nocookie.com/embed/kVTn2CqqvD4?si=4ZFRCRRtNGMMqGtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
 
 
     <script src="./js/module.js" type="module"></script>
