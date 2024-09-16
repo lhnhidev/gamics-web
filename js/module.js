@@ -7,7 +7,8 @@ var data = {
         headerTopOfferStart: 'Exclusive Black Friday ! Offer ',
         headerTopOfferEnd: 'Days',
         headerTopFollow: 'Follow us on :',
-        headerNav: ['Home', 'Live', 'Features', 'Shop', 'Blog', 'Contact'],
+        headerNav: ['Home', 'Game info', 'Live', 'Shop', 'Blog', 'Contact'],
+        headerGlobe: ['English', 'Vietnamese', 'Korean', 'Japanese'],
         sliderSlogan: [
             'The ultimate strategy, the character that shapes victory',
             'Fight alongside teammates, win through strategy'
@@ -19,13 +20,21 @@ var data = {
         headerTopOfferStart: 'Ưu đãi Độc Quyền Black Friday ! Kéo Dài ',
         headerTopOfferEnd: 'Ngày',
         headerTopFollow: 'Theo dõi chúng tôi :',
-        headerNav: ['Trang chủ', 'Live', 'Tiện ích', 'Sản phẩm', 'Bài viết', 'Liên hệ'],
+        headerNav: ['Thông tin trò chơi', 'Live', 'Tiện ích', 'Sản phẩm', 'Bài viết', 'Liên hệ'],
         sliderSlogan: [
             'Chiến thuật đỉnh cao, nhân vật định hình chiến thắng',
             'Chiến đấu cùng đồng đội, chiến thắng bằng chiến thuật'
         ],
         sliderDonwload: 'Tải về',
     },
+
+    korean: {
+
+    },
+
+    japanese: {
+        
+    }
 };
 
     /*

@@ -217,16 +217,29 @@
     transform: translateX(-50%);
     display: block;
     content: "";
-    width: 40px;
+    width: 55px;
     height: 20px;
     background-color: transparent;
 }
 
+.header__lang-list .header__lang-item:nth-child(even) {
+    margin-left: 40px;
+} 
+
 .header__lang-item {
+    width: 150px;
     color: var(--text-light-color);
     padding: 10px 20px;
     font-size: 1.4rem;
-    text-transform: uppercase;
+    text-transform: unset;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.header__lang-item:hover.skew-background::before {
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--sub-title-light-color);
+    transition: .3s;
 }
 
 .header__lang-item.skew-background::before {
@@ -418,25 +431,25 @@
 */
 
 .slider {
-    padding: 50px 0px;
-    background-color: var(--background-second);
+    background: linear-gradient(#3c1930e7, #3C1930e7) ,url('../background/we-are-valorant.webp');
     height: var(--height);
+    height: 500px;
 }
 
-.slider__top {
+.slider__main {
     padding: 20px 200px;
-    border-top: 4px solid #000;
-    border-bottom: 4px solid #000;
-    background-color: var(--primary-color);
+    border-top: 5px solid #4D2D41;
+    border-bottom: 5px solid #4D2D41;
+    background-image: linear-gradient(to right, #CB356B, #BD3F32);
     transition: .5s;
 }
 
-.slider__top:hover .slider__team-item {
+.slider__main:hover .slider__team-item {
     animation-play-state: paused !important;
     filter: blur(2px);
 }
 
-.slider__top .slider__team-item:hover {
+.slider__main .slider__team-item:hover {
     filter: blur(0);
 }
 
