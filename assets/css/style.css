@@ -394,10 +394,6 @@
     transition: .5s;
 }
 
-.slider__top:hover {
-    background-color: var(--background-primary);
-}
-
 .slider__top:hover .slider__team-item {
     animation-play-state: paused !important;
     filter: blur(2px);
