@@ -35,6 +35,17 @@ body {
     display: none;
 }
 
+.lazy {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity .6s ease-out, transform .6s ease-out;
+}
+
+.not-lazy {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* ? CSS for scroll bar */
 
 body::-webkit-scrollbar {

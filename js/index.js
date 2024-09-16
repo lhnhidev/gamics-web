@@ -73,3 +73,28 @@ findBackground.addEventListener('click', () => {
         document.querySelector('.find').classList.add('hidden');
     }, 500);
 });
+
+    /**
+     *  ! Lazy loading Elements
+     */
+
+const lazyElemnts = document.querySelectorAll('.lazy');
+
+let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // entry.target.classList.remove('lazy');
+            // console.log('Phần tử đã xuất hiện ít nhất 10% trong viewport');
+            entry.target.classList.add('not-lazy');
+            // observer.unobserve(entry.target);
+        }
+        else if (entry.target.classList.contains('not-lazy')) {
+            entry.target.classList.remove('not-lazy');
+        }
+    });
+    
+}, {threshold: 0.2} );
+
+lazyElemnts.forEach(ele => {
+    observer.observe(ele);
+})
