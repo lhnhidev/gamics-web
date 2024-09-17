@@ -519,26 +519,6 @@
     background-repeat: no-repeat;
 }
 
-.live__main {
-    
-}
-
-.live__header { 
-    
-}
-
-.live__title {
-    
-}
-
-.live__header span {
-    color: var(--primary-color);
-}
-
-.live__header img {
-    
-}
-
 .live__video {
     position: relative;
     width: 800px;
@@ -563,23 +543,63 @@
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.live__match {
-    margin-top: 300px;
-    background-color: blue;
+/*
+
+    ? MATCH
+
+*/
+
+.match {
+    background-image: linear-gradient(#3c1930b5, #3C1930ef), url('../img/bk-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    /* padding-top: 60px; */
 }
 
-.live__team {
-
+.match__main {
+    padding: 50px 0px 70px;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    background-image: linear-gradient(#0000004d, #0000004d);
+    box-shadow: rgba(87, 57, 255, 0.15) 0px 48px 100px 0px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(251, 0, 0, 0) 100%);
 }
 
-.live__team img {
-
+.match__main::after {
+    display: block;
+    content: 'LIVE';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26rem;
+    font-weight: 700;
+    letter-spacing: 20px;
+    color: #3E1B3C;
+    opacity: .6;
+    z-index: -1;
 }
 
-.live__box {
-
+.match__main .container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.live__time {
+.match__team {
+    position: relative;
+}
 
+.match__img {
+    width: 250px;
+}
+
+.match__name-team {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }

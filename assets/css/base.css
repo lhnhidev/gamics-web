@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+*::selection {
+    color: var(--text-light-color);
+    background-color: #FA2D66;
+}
+
 body {
     position: relative;
     font-family: var(--font-family);
