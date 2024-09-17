@@ -38,7 +38,8 @@ body {
 .lazy {
     opacity: 0;
     transform: translateY(100px);
-    transition: opacity .6s ease-out, transform .6s ease-out;
+    /* transition: opacity .6s ease-out, transform .6s ease-out; */
+    transition: 1s ease-in-out;
 }
 
 .not-lazy {
@@ -59,6 +60,38 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-color);
+}
+
+/* ? CSS for Section */
+.section {
+    position: relative;
+    padding: 70px 0px;
+}
+
+.section__main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section__header {
+    margin-top: 15px;
+    margin-bottom: 60px;
+    color: var(--text-light-color);
+}
+
+.section__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.section__img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
 }
 
 /* ? CSS for tranform/keyframe */

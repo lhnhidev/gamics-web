@@ -78,23 +78,26 @@ findBackground.addEventListener('click', () => {
      *  ! Lazy loading Elements
      */
 
-const lazyElemnts = document.querySelectorAll('.lazy');
+let lazyLoadingFunction = function (lazy, notLazy, percengeElement) {
 
-let observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            // entry.target.classList.remove('lazy');
-            // console.log('Phần tử đã xuất hiện ít nhất 10% trong viewport');
-            entry.target.classList.add('not-lazy');
-            // observer.unobserve(entry.target);
-        }
-        else if (entry.target.classList.contains('not-lazy')) {
-            entry.target.classList.remove('not-lazy');
-        }
-    });
+    const lazyElemnts = document.querySelectorAll(`.${lazy}`);
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add(notLazy);
+            }
+            else if (entry.target.classList.contains(notLazy)) {
+                entry.target.classList.remove(notLazy);
+            }
+        });
+        
+    }, {threshold: percengeElement} );
     
-}, {threshold: 0.2} );
+    lazyElemnts.forEach(ele => {
+        observer.observe(ele);
+    })
 
-lazyElemnts.forEach(ele => {
-    observer.observe(ele);
-})
+}
+
+lazyLoadingFunction('lazy', 'not-lazy', 0.5);
