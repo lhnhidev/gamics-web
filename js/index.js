@@ -96,8 +96,11 @@ let lazyLoadingFunction = function (lazy, notLazy, percengeElement) {
     
     lazyElemnts.forEach(ele => {
         observer.observe(ele);
-    })
+    });
 
 }
 
-lazyLoadingFunction('lazy', 'not-lazy', 0.5);
+lazyLoadingFunction('live__video', 'keyframe-fade-in-up', 0.5);
+lazyLoadingFunction('banner__under', 'keyframe-blur-scale', 0.6);
+lazyLoadingFunction('banner__img', 'keyframe-fade-in-down', 0.8);
+lazyLoadingFunction('skew-background.animate__animated', 'animate__bounceIn', 0.3);

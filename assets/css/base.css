@@ -35,18 +35,6 @@ body {
     display: none;
 }
 
-.lazy {
-    opacity: 0;
-    transform: translateY(100px);
-    /* transition: opacity .6s ease-out, transform .6s ease-out; */
-    transition: 1s ease-in-out;
-}
-
-.not-lazy {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* ? CSS for scroll bar */
 
 body::-webkit-scrollbar {
@@ -96,15 +84,59 @@ body::-webkit-scrollbar-thumb {
 
 /* ? CSS for tranform/keyframe */
 
+@keyframes fadeInUp {
+    form {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.keyframe-fade-in-up {
+    animation: fadeInUp ease-in-out 0.8s forwards;
+}
+
+.animate__bounceIn {
+    animation-duration: 1s;
+}
+
 @keyframes blurAndScale {
     form {
         filter: blur(5px);
         transform: scale(1.2);
     }
     to {
+        filter: blur(4px);
+        transform: scale(1.4);
+    }
+    to {
         filter: unset;
         transform: scale(1);
     }
+}
+
+.keyframe-blur-scale {
+    animation: blurAndScale ease-in-out var(--time-animation-banner);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
+    form {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.keyframe-fade-in-down {
+    animation: fadeInDown ease-in-out 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes blink {
@@ -120,6 +152,10 @@ body::-webkit-scrollbar-thumb {
     to {
         opacity: 0;
     }
+}
+
+.keyframe-blink {
+    animation: blink 1s ease-in-out infinite;
 }
 
 @keyframes fadeIn {
@@ -142,9 +178,4 @@ body::-webkit-scrollbar-thumb {
 
 .animate__animated.animate__pulse {
     animation-duration: 1.5s;
-}
-
-.keyframe-blink {
-    animation: blink 1s ease-in-out infinite;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
