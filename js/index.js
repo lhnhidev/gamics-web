@@ -78,7 +78,7 @@ findBackground.addEventListener('click', () => {
      *  ! Lazy loading Elements
      */
 
-let lazyLoadingFunction = function (lazy, notLazy, percengeElement) {
+let lazyLoadingFunction = function (lazy, notLazy, percengeElement, count) {
 
     const lazyElemnts = document.querySelectorAll(`.${lazy}`);
 
@@ -86,6 +86,12 @@ let lazyLoadingFunction = function (lazy, notLazy, percengeElement) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add(notLazy);
+                if (count == true) {
+                    observer.unobserve(entry.target);
+                }
+                // document.addEventListener('scroll', () => {
+                //     observer.observe(entry.target);
+                // });
             }
             else if (entry.target.classList.contains(notLazy)) {
                 entry.target.classList.remove(notLazy);
@@ -100,7 +106,7 @@ let lazyLoadingFunction = function (lazy, notLazy, percengeElement) {
 
 }
 
-lazyLoadingFunction('live__video', 'keyframe-fade-in-up', 0.5);
+lazyLoadingFunction('live__video', 'keyframe-fade-in-up', 0.5, 1);
 lazyLoadingFunction('banner__under', 'keyframe-blur-scale', 0.6);
 lazyLoadingFunction('banner__img', 'keyframe-fade-in-down', 0.8);
 lazyLoadingFunction('skew-background.animate__animated', 'animate__bounceIn', 0.3);

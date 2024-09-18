@@ -519,6 +519,10 @@
     background-repeat: no-repeat;
 }
 
+.live__title span {
+    color: var(--primary-color);
+}
+
 .live__video {
     position: relative;
     width: 800px;
@@ -575,7 +579,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 26rem;
+    font-size: 28rem;
     font-weight: 700;
     letter-spacing: 20px;
     color: #3E1B3C;
@@ -588,18 +592,77 @@
     justify-content: space-between;
 }
 
+.match__desc {
+    margin: auto;
+}
+
+.match__desc-text {
+    color: var(--text-light-color);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-weight: 700;
+    padding: 2px 20px;
+    background-image: linear-gradient(45deg, #CB3F90 0%, var(--primary-color) 50%, #CB3F90 100%);
+}
+
+.match__time {
+    font-size: 8rem;
+    background: linear-gradient(180deg, rgba(155,68,213,1) 0%, var(--primary-color) 50%, rgba(155,68,213,1) 100%);
+    -webkit-background-clip: text; /* Giới hạn gradient chỉ trong văn bản */
+    -webkit-text-fill-color: transparent; /* Làm văn bản trong suốt */
+    text-align: center;
+    font-weight: 500;
+}
+
 .match__team {
     position: relative;
 }
 
-.match__img {
-    width: 250px;
+.match__main .match__team:first-child .match__name-box {
+    left: 160px;
 }
 
-.match__name-team {
-    width: 50px;
-    height: 50px;
+.match__main .match__team:last-child .match__name-box {
+    right: 160px;
+}
+
+.match__name-country p {
+    color: var(--text-light-color);
+    margin-bottom: 0;
+}
+
+.match__name-team p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.match__main .match__team:first-child .match__name-country,
+.match__main .match__team:first-child .match__name-team {
+    text-align: left;
+    margin-left: 80px;
+}
+
+.match__main .match__team:last-child .match__name-country,
+.match__main .match__team:last-child .match__name-team {
+    text-align: right;
+    margin-right: 80px;
+}
+
+.match__img {
+    position: relative;
+    z-index: 1;
+    width: 230px;
+}
+
+.match__name-box {
+    width: 230px;
+    height: 80px;
     position: absolute;
+    opacity: .7;
+    font-size: 1.6rem;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50%));
+    z-index: 0;
+    padding-top: 12px;
 }
