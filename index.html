@@ -60,8 +60,17 @@
                             <li class="header__list-item">
                                 <a href="#home" class="skew-background" style="--skew: -16deg;">Home</a>
                             </li>
-                            <li class="header__list-item">
+                            <li class="header__list-item header__live">
                                 <a href="#live" class="skew-background" style="--skew: -16deg;">Live</a>
+
+                                <ul class="header__live-list menu__wrapper">
+                                    <a href="#live" class="header__live-item menu__item skew-background animate__animated animate__fadeInLeft" style="--skew: -25deg;">
+                                        Watch Live
+                                    </a>
+                                    <a href="#matches" class="header__live-item menu__item skew-background animate__animated animate__fadeInRight" style="--skew: 25deg;">
+                                        Matches
+                                    </a>
+                                </ul>
                             </li>
                             <li class="header__list-item">
                                 <a href="#gameInfo" class="skew-background" style="--skew: -16deg;">Game info</a>
@@ -84,11 +93,11 @@
                             <li class="header__list-item search" id="globeBtn">
                                 <i class="fa-solid fa-globe"></i>
 
-                                <ul class="header__lang-list">
-                                    <li class="header__lang-item skew-background animate__animated animate__fadeInLeft" style="--skew: -25deg;">English</li>
-                                    <li class="header__lang-item skew-background animate__animated animate__fadeInRight" style="--skew: 25deg;">VietNamese</li>
-                                    <li class="header__lang-item skew-background animate__animated animate__fadeInLeft" style="--skew: -25deg;">Korean</li>
-                                    <li class="header__lang-item skew-background animate__animated animate__fadeInRight" style="--skew: -25deg;">Japanese</li>
+                                <ul class="header__lang-list menu__wrapper">
+                                    <li class="header__lang-item menu__item skew-background animate__animated animate__fadeInLeft" style="--skew: -25deg;">English</li>
+                                    <li class="header__lang-item menu__item skew-background animate__animated animate__fadeInRight" style="--skew: 25deg;">VietNamese</li>
+                                    <li class="header__lang-item menu__item skew-background animate__animated animate__fadeInLeft" style="--skew: -25deg;">Korean</li>
+                                    <li class="header__lang-item menu__item skew-background animate__animated animate__fadeInRight" style="--skew: -25deg;">Japanese</li>
                                 </ul>
                             </li>
                         </ul>
@@ -259,7 +268,7 @@
 
     </section>
 
-    <section class="match">
+    <section class="match" id="matches">
 
         <div class="match__main">
             <div class="container">
