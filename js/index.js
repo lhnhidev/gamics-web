@@ -80,7 +80,7 @@ findBackground.addEventListener('click', () => {
 
 let lazyLoadingFunction = function (lazy, notLazy, percengeElement, count) {
 
-    const lazyElemnts = document.querySelectorAll(`.${lazy}`);
+    const lazyElemnts = document.querySelectorAll(`${lazy}`);
 
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
@@ -106,7 +106,12 @@ let lazyLoadingFunction = function (lazy, notLazy, percengeElement, count) {
 
 }
 
-lazyLoadingFunction('live__video', 'keyframe-fade-in-up', 0.5, 1);
-lazyLoadingFunction('banner__under', 'keyframe-blur-scale', 0.6);
-lazyLoadingFunction('banner__img', 'keyframe-fade-in-down', 0.8);
-lazyLoadingFunction('skew-background.animate__animated', 'animate__bounceIn', 0.3);
+lazyLoadingFunction('.live__video', 'keyframe-fade-in-up');
+lazyLoadingFunction('.banner__under', 'keyframe-blur-scale');
+lazyLoadingFunction('.banner__img', 'keyframe-fade-in-down');
+lazyLoadingFunction('.banner__button .animate__animated', 'animate__bounceIn');
+lazyLoadingFunction('.match__under', 'keyframe-blur-scale');
+lazyLoadingFunction('.match__name-box.animate__animated', 'animate__flash');
+lazyLoadingFunction('.match__img-one.animate__animated', 'animate__fadeInRight');
+lazyLoadingFunction('.match__img-two.animate__animated', 'animate__fadeInLeft');
+lazyLoadingFunction('#matchTime', 'animate__flip');
