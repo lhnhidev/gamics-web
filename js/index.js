@@ -116,3 +116,5 @@ lazyLoadingFunction('.match__img-one.animate__animated', 'animate__fadeInRight')
 lazyLoadingFunction('.match__img-two.animate__animated', 'animate__fadeInLeft');
 lazyLoadingFunction('#matchTime', 'animate__flip');
 lazyLoadingFunction('.match__schedule', 'animate__flipInX');
+lazyLoadingFunction('.about__content', 'animate__fadeInLeft');
+lazyLoadingFunction('.about__video', 'animate__fadeInRight')
