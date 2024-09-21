@@ -758,6 +758,7 @@
 .about {
     height: 100vh;
     background-color: var(--background-grey);
+
 }
 
 .about__learn {
