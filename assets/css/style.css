@@ -1,6 +1,6 @@
 /*
 
-    ? HEADER TOP
+    TODO: HEADER TOP
 
 */
 
@@ -77,7 +77,7 @@
 
 /*
 
-    ? HEADER BOTTOM
+    TODO: HEADER BOTTOM
 
 */
 
@@ -259,7 +259,7 @@
 
 /*
 
-    ? SEARCH
+    TODO: SEARCH
 
 */
 
@@ -321,7 +321,7 @@
 
 /*
 
-    ? BANNER
+    TODO: BANNER
 
 */
 
@@ -441,13 +441,9 @@
 
 /*
 
-    ? SLIDER
+    TODO: SLIDER
 
 */
-
-.slider {
-
-}
 
 .slider__main {
     padding: 20px 200px;
@@ -517,7 +513,7 @@
 
 /*
 
-    ? LIVE
+    TODO: LIVE
 
 */
 
@@ -559,7 +555,7 @@
 
 /*
 
-    ? MATCH
+    TODO: MATCH
 
 */
 
@@ -628,7 +624,7 @@
 .match__time {
     font-size: 8rem;
     background: linear-gradient(180deg, rgba(155,68,213,1) 0%, var(--primary-color) 50%, rgba(155,68,213,1) 100%);
-    -webkit-background-clip: text; /* Giới hạn gradient chỉ trong văn bản */
+    background-clip: text; /* Giới hạn gradient chỉ trong văn bản */
     -webkit-text-fill-color: transparent; /* Làm văn bản trong suốt */
     text-align: center;
     font-weight: 500;
@@ -719,10 +715,6 @@
     transition: .3s;
 }
 
-.match__wrapper {
-
-}
-
 .match__schedule-box {
     display: flex;
 }
@@ -759,7 +751,7 @@
 
 /*
 
-    ? ABOUT 
+    TODO: ABOUT 
 
 */
 
@@ -791,7 +783,7 @@
 
 /*
 
-    ? AGENTS
+    TODO: AGENTS
 
 */
 
@@ -800,10 +792,6 @@
     background-color: var(--scrollbar-color);
     background-color: #FD595A;
     color: var(--background-grey);
-}
-
-.agents__title {
-
 }
 
 .agents__learn.skew-background::before {
