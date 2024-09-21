@@ -117,4 +117,6 @@ lazyLoadingFunction('.match__img-two.animate__animated', 'animate__fadeInLeft');
 lazyLoadingFunction('#matchTime', 'animate__flip');
 lazyLoadingFunction('.match__schedule', 'animate__flipInX');
 lazyLoadingFunction('.about__content', 'animate__fadeInLeft');
-lazyLoadingFunction('.about__video', 'animate__fadeInRight')
+lazyLoadingFunction('.about__video', 'animate__fadeInRight');
+lazyLoadingFunction('.agents__content', 'animate__fadeInLeft');
+lazyLoadingFunction('.agents__img', 'animate__fadeInRight');
