@@ -94,10 +94,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-2__title {
-    font-size: 14rem;
+    font-size: 11rem;
     line-height: 130px;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: -7px;
+    text-transform: uppercase;
 }
 
 .section-2__slogan {
@@ -115,7 +116,7 @@ body::-webkit-scrollbar-thumb {
     text-align: justify;
 }
 
-.section-2__learn {
+.section-2__btn {
     margin-top: 40px;
     padding: 16px 24px;
     background-color: var(--primary-color);
@@ -125,16 +126,7 @@ body::-webkit-scrollbar-thumb {
     border: none;
     outline: none;
     transition: .3s;
-}
-
-.section-2__learn:hover {
-    cursor: pointer;
-    background-color: var(--background-primary);
-    transition: .3s;
-}
-
-.section-2__media {
-    
+    font-weight: 600;
 }
 
 .section-2__grid {

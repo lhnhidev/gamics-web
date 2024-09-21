@@ -772,10 +772,6 @@
     background-color: transparent;
 }
 
-.about__learn:hover {
-    background-color: transparent;
-}
-
 .about__learn.skew-background::before {
     transition: .3s;
 }
@@ -791,4 +787,44 @@
     max-height: 190px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+/*
+
+    ? AGENTS
+
+*/
+
+.agents {
+    background-color: var(--scrollbar-color);
+    color: var(--background-grey);
+}
+
+.agents__title {
+    
+}
+
+.agents__learn.skew-background::before {
+    background-color: var(--background-primary);
+}
+
+.agents__learn {
+    background-color: transparent;
+}
+
+.agents__learn:hover {
+    color: var(--text-dark-color);
+}
+
+.agents__learn.skew-background::before {
+    transition: .3s;
+}
+
+.agents__learn:hover.skew-background::before {
+    background-color: var(--background-grey);
+    transition: .3s;
+}
+
+.agents__img img {
+    width: 100%;
 }
