@@ -796,12 +796,14 @@
 */
 
 .agents {
+    position: relative;
     background-color: var(--scrollbar-color);
+    background-color: #FD595A;
     color: var(--background-grey);
 }
 
 .agents__title {
-    
+
 }
 
 .agents__learn.skew-background::before {
@@ -827,4 +829,29 @@
 
 .agents__img img {
     width: 100%;
+}
+
+.agents__background {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: calc(100% - 10px);
+    height: 100%;
+    background-image: url('../img/bk-2.jpeg');
+    background-position: 180px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.agents__background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    transform: scaleX(-1);
 }
