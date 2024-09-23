@@ -755,12 +755,6 @@
 
 */
 
-.about {
-    height: 100vh;
-    background-color: var(--background-grey);
-
-}
-
 .about__learn {
     background-color: transparent;
 }
@@ -795,6 +789,11 @@
     color: var(--background-grey);
 }
 
+.agents__background {
+    width: calc(100% - 10px);
+    background-position: 180px center;
+}
+
 .agents__learn.skew-background::before {
     background-color: var(--background-primary);
 }
@@ -816,31 +815,25 @@
     transition: .3s;
 }
 
-.agents__img img {
-    width: 100%;
+/*
+
+    ? WEAPON
+
+*/
+
+.weapon__learn {
+    background-color: transparent;
 }
 
-.agents__background {
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: calc(100% - 10px);
-    height: 100%;
-    background-image: url('../img/bk-2.jpeg');
-    background-position: 180px center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.weapon__learn:hover.skew-background::before {
+    background-color: var(--background-primary);
+    transition: .3s;
 }
 
-.agents__background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.weapon__learn.skew-background::before {
+    transition: .3s;
+}
+
+.weapon__img {
     width: 100%;
-    height: 100%;
-    background-image: inherit;
-    background-size: inherit;
-    background-position: inherit;
-    transform: scaleX(-1);
 }

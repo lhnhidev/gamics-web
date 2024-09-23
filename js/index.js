@@ -120,3 +120,5 @@ lazyLoadingFunction('.about__content', 'animate__fadeInLeft');
 lazyLoadingFunction('.about__video', 'animate__fadeInRight');
 lazyLoadingFunction('.agents__content', 'animate__fadeInLeft');
 lazyLoadingFunction('.agents__background', 'animate__fadeInRight');
+lazyLoadingFunction('.weapon__content', 'animate__fadeInLeft');
+lazyLoadingFunction('.weapon__img', 'animate__fadeInRight');
