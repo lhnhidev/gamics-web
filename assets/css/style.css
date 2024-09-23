@@ -784,7 +784,6 @@
 
 .agents {
     position: relative;
-    background-color: var(--scrollbar-color);
     background-color: #FD595A;
     color: var(--background-grey);
 }
@@ -792,6 +791,10 @@
 .agents__background {
     width: calc(100% - 10px);
     background-position: 180px center;
+}
+
+.agents__background.section-2__background::before {
+    transform: scaleX(-1);
 }
 
 .agents__learn.skew-background::before {
@@ -836,4 +839,37 @@
 
 .weapon__img {
     width: 100%;
+}
+
+/*
+
+    ? MAPS
+
+*/
+
+.maps {
+    position: relative;
+    background-color: #FD595A;
+    color: var(--background-grey);
+}
+
+.maps__background {
+    width: calc(100% - 10px);
+    background-position: center top;
+}
+.maps__learn {
+    background-color: transparent;
+}
+
+.maps__learn:hover {
+    color: var(--text-dark-color);
+}
+
+.maps__learn.skew-background::before {
+    transition: .3s;
+}
+
+.maps__learn:hover.skew-background::before {
+    background-color: var(--background-grey);
+    transition: .3s;
 }

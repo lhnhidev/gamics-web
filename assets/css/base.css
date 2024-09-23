@@ -115,7 +115,6 @@ body::-webkit-scrollbar-thumb {
     background-image: var(--img);
     background-size: inherit;
     background-position: inherit;
-    transform: scaleX(-1);
 }
 
 .section-2__title {
