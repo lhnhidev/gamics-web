@@ -57,7 +57,7 @@
                     <div class="header__nav">
                         <ul class="header__list">
                             <li class="header__list-item">
-                                <a href="#home" class="skew-background" style="--skew: -16deg;">Home</a>
+                                <a href="#contact" class="skew-background" style="--skew: -16deg;">Home</a>
                             </li>
                             <li class="header__list-item header__live">
                                 <a href="#live" class="skew-background" style="--skew: -16deg;">Live</a>
@@ -144,8 +144,11 @@
     -->
     <div class="banner" id="contact">
 
-        <div class="banner__under"></div>
-        <div class="banner__home" id="home"></div>
+        <div class="banner__under">
+            <video muted autoplay loop>
+                <source src="./assets/video/video-banner.mp4">
+            </video>
+        </div>
 
         <div class="banner__over">
 
@@ -610,6 +613,9 @@
         </div>
     </section>
 
+    <!--
+        TODO: Maps
+    -->
     <section class="maps section-2" id="maps">
         <div class="maps__background section-2__background animate__animated" style="--img: url('../img/map-section-2.jpg');">
             
@@ -640,6 +646,6 @@
     </section>
 
     <script src="./js/module.js" type="module"></script>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/index.js" async type="module"></script>
 </body>
 </html>
