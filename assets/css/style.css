@@ -338,18 +338,16 @@
     /* background-image: linear-gradient(#ffffff0a, #21252942, #ff007763); */
     /* background-image: linear-gradient(#00000015, #00000090), url(../img/banner-1.jpeg); */
     /* background-image: linear-gradient(#007bff25, #ce00605c), url(../img/banner-1.jpeg); */
-    
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--background-primary);
     width: 100%;
     min-height: var(--height-banner);
-    filter: blur(8px);
-    transform: scale(var(--scale-banner));
 }
 
-.banner__under > video {
+.banner__video {
     width: 100%;
+    filter: blur(8px);
+    transform: scale(var(--scale-banner));
+    animation: blurAndScale ease-in-out 2s forwards;
     /* height: 100%; */
 }
 
@@ -534,14 +532,6 @@
     height: 450px;
     opacity: 0;
     transform: translateY(100px);
-}
-
-.live__thumbnail {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    border-radius: 5px;
 }
 
 .live__frame {
@@ -871,4 +861,77 @@
 .maps__learn:hover.skew-background::before {
     background-color: var(--background-grey);
     transition: .3s;
+}
+
+/*
+
+    ? SHOP
+
+*/
+
+.shop {
+    position: relative;
+    height: 100vh;
+    background-color: var(--background-grey);
+}
+
+.shop__title {
+    color: var(--text-dark-color);
+}
+
+.shop__desc {
+    color: var(--text-dark-color);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.shop__title span {
+    color: var(--primary-color);
+}
+
+.shop__products {
+    
+}
+
+.shop__product {
+    background-color: var(--background-primary);
+    overflow: hidden;
+    border-radius: 4px;
+    color: var(--text-light-color);
+    min-height: 280px;
+}
+
+.shop__img {
+
+}
+
+.shop__img > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.shop__title {
+
+}
+
+.shop__desc {
+    margin: auto;
+    width: 50%;
+    margin-top: 22px;
+}
+
+.shop__main {
+
+}
+
+.shop__price {
+
+}
+
+.shop__cart {
+
 }

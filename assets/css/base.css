@@ -244,11 +244,11 @@ body::-webkit-scrollbar-thumb {
         transform: scale(1.6);
     }
     to {
-        filter: blur(5px);
+        filter: blur(4px);
         transform: scale(1.3);
     }
     to {
-        filter: blur(3px);
+        filter: blur(0px);
         transform: scale(1);
     }
 }
