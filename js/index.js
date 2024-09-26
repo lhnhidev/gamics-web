@@ -124,3 +124,4 @@ lazyLoadingFunction('.weapon__content', 'animate__fadeInLeft');
 lazyLoadingFunction('.weapon__img', 'animate__fadeInRight');
 lazyLoadingFunction('.maps__background', 'animate__fadeInRight');
 lazyLoadingFunction('.maps__content', 'animate__fadeInLeft');
+lazyLoadingFunction('.shop__product', 'animate__pulse');
