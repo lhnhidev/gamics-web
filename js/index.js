@@ -106,6 +106,37 @@ let lazyLoadingFunction = function (lazy, notLazy, percengeElement, count) {
 
 }
 
+    /**
+     *  ! Slider Blog
+     */
+
+const blogList = document.querySelector('#blogList');
+const blogItem = document.querySelectorAll('.blog__item');
+const leftBtn = document.querySelector('#leftBtn');
+const rightBtn = document.querySelector('#rightBtn')
+
+var distanceSlider = 0;
+var maxClickSlider = 0;
+
+function sliderToLeft() {
+    ++distanceSlider;
+    blogItem.forEach((element, i) => {
+        element.style.transform = `translateX(-${distanceSlider * 100}%)`;
+    });
+}
+
+function sliderToRight() {
+    
+}
+
+leftBtn.addEventListener('click', () => {
+    sliderToLeft();
+});
+
+rightBtn.addEventListener('click', () => {
+    sliderToRight();
+});
+
 lazyLoadingFunction('.live__video', 'keyframe-fade-in-up');
 lazyLoadingFunction('.banner__under', 'keyframe-blur-scale');
 lazyLoadingFunction('.banner__img', 'keyframe-fade-in-down');

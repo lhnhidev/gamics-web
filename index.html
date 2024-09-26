@@ -747,6 +747,7 @@
     -->
     <section class="blog section-1" id="blog">
 
+        
         <div class="container">
             <div class="blog__main">
                 
@@ -755,11 +756,15 @@
                     <img class="blog__underline section-1__img" src="./assets/img/title-underline.png" alt="">
                     <p class="blog__desc section-1__desc">Stay tuned to master updates and sharpen your skills with unique strategies</p>
                 </div>
-
+                
                 <div class="blog__products">
-                    <div class="row">
+                    <button class="blog__pagination blog__pagination--left" id="leftBtn">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+
+                    <ul class="blog__list row" id="blogList">
                         
-                        <div class="col-xl-4">
+                        <li class="blog__item col-xl-4">
 
                             <div class="blog__product animate__animated">
                                 <div class="blog__img">
@@ -773,8 +778,8 @@
                                 <p class="blog__content">Find out what’s in store for VALORANT Esports immediately after Champions!</p>
                             </div>
 
-                        </div>
-                        <div class="col-xl-4">
+                        </li>
+                        <li class="blog__item col-xl-4">
 
                             <div class="blog__product animate__animated">
                                 <div class="blog__img">
@@ -789,8 +794,8 @@
                                 
                             </div>
 
-                        </div>
-                        <div class="col-xl-4">
+                        </li>
+                        <li class="blog__item col-xl-4">
 
                             <div class="blog__product animate__animated">
                                 <div class="blog__img">
@@ -805,18 +810,73 @@
                                 
                             </div>
 
-                        </div>
+                        </li>
 
-                    </div>
+                        <li class="blog__item col-xl-4">
 
-                    <button class="blog__more skew-background" style="--skew: -16deg">Read more</button>
+                            <div class="blog__product animate__animated">
+                                <div class="blog__img">
+                                    <img src="./assets/img/blog-3.webp" alt="">
+                                </div>
+                                <div class="blog__state">
+                                    <p class="blog__admin"><i class="fa-regular fa-user"></i> Admin</p>
+                                    <p class="blog__time"><i class="fa-regular fa-calendar-days"></i> last month</p>
+                                </div>
+                                <h3 class="blog__heading">Everything You Need to Know</h3>
+                                <p class="blog__content">Find out what’s in store for VALORANT Esports immediately after Champions!</p>
+                                
+                            </div>
+
+                        </li>
+
+                        <li class="blog__item col-xl-4">
+
+                            <div class="blog__product animate__animated">
+                                <div class="blog__img">
+                                    <img src="./assets/img/blog-3.webp" alt="">
+                                </div>
+                                <div class="blog__state">
+                                    <p class="blog__admin"><i class="fa-regular fa-user"></i> Admin</p>
+                                    <p class="blog__time"><i class="fa-regular fa-calendar-days"></i> last month</p>
+                                </div>
+                                <h3 class="blog__heading">Everything You Need to Know</h3>
+                                <p class="blog__content">Find out what’s in store for VALORANT Esports immediately after Champions!</p>
+                                
+                            </div>
+
+                        </li>
+
+                        <li class="blog__item col-xl-4"></li>
+
+                            <div class="blog__product animate__animated">
+                                <div class="blog__img">
+                                    <img src="./assets/img/blog-3.webp" alt="">
+                                </div>
+                                <div class="blog__state">
+                                    <p class="blog__admin"><i class="fa-regular fa-user"></i> Admin</p>
+                                    <p class="blog__time"><i class="fa-regular fa-calendar-days"></i> last month</p>
+                                </div>
+                                <h3 class="blog__heading">Everything You Need to Know</h3>
+                                <p class="blog__content">Find out what’s in store for VALORANT Esports immediately after Champions!</p>
+                                
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="blog__pagination blog__pagination--right" id="rightBtn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
 
                 </div>
-
+                
+                <button class="blog__more skew-background" style="--skew: -16deg">Read more</button>
 
             </div>
 
         </div>
+
 
     </section>
 
