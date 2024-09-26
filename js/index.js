@@ -119,10 +119,7 @@ var distance = 0;
 var maxClick = parseInt(blogItem.length / 3) - (blogItem.length % 3 ? 0 : 1);
 
 function slide(distance) {
-    distance = parseInt(distance);
-    blogItem.forEach((element, i) => {
-        element.style.transform = `translateX(${distance}%)`;
-    });
+    blogItem.forEach(element => element.style.transform = `translateX(${parseInt(distance)}%)`);
 }
 
 function sliderToLeft() {
