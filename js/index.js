@@ -115,27 +115,50 @@ const blogItem = document.querySelectorAll('.blog__item');
 const leftBtn = document.querySelector('#leftBtn');
 const rightBtn = document.querySelector('#rightBtn')
 
-var distanceSlider = 0;
-var maxClickSlider = 0;
+var distance = 0;
+var maxClick = parseInt(blogItem.length / 3) - (blogItem.length % 3 ? 0 : 1);
 
-function sliderToLeft() {
-    ++distanceSlider;
+function slide(distance) {
+    distance = parseInt(distance);
     blogItem.forEach((element, i) => {
-        element.style.transform = `translateX(-${distanceSlider * 100}%)`;
+        element.style.transform = `translateX(${distance}%)`;
     });
 }
 
-function sliderToRight() {
-    
+function sliderToLeft() {
+    if (distance == 0) {
+        distance = -maxClick * 300;
+    }
+    else {
+        distance += 300;
+    }
+    slide(distance);
 }
 
+function sliderToRight() {
+    if (distance == -maxClick * 300) {
+        distance = 0;
+    }
+    else {
+        distance -= 300;
+    }
+    slide(distance);
+}
+
+var autoSlide = setInterval(sliderToRight, 3500);
+
 leftBtn.addEventListener('click', () => {
+    clearInterval(autoSlide);
     sliderToLeft();
+    autoSlide = setInterval(sliderToRight, 3500);
 });
 
 rightBtn.addEventListener('click', () => {
+    clearInterval(autoSlide);
     sliderToRight();
+    autoSlide = setInterval(sliderToRight, 3500);
 });
+
 
 lazyLoadingFunction('.live__video', 'keyframe-fade-in-up');
 lazyLoadingFunction('.banner__under', 'keyframe-blur-scale');
