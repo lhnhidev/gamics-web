@@ -55,3 +55,13 @@ export {imgOfVideo, video};
 
 var imgOfVideo = document.querySelector('.live__thumbnail'),
     video = document.querySelector('.live__frame');
+
+    /**
+     * ! Variable of section Blog
+     */
+
+export {blogItem, leftBtn, rightBtn};
+
+const blogItem = document.querySelectorAll('.blog__item');
+const leftBtn = document.querySelector('#leftBtn');
+const rightBtn = document.querySelector('#rightBtn')

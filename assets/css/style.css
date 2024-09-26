@@ -946,7 +946,7 @@
     background-image: linear-gradient(#00000053, #00000053), url('../img/1322753.jpeg');
     background-position: center center;
     background-size: cover;
-    height: 115vh;
+    height: 125vh;
 }
 
 .blog__main {
@@ -1135,4 +1135,120 @@ ul.blog__list {
 
 .blog__item {
     transition: ease-in-out 1.5s;
+}
+
+/*
+
+    ? CONTACT
+
+*/
+
+.contact {
+    transform: translateY(-50%);
+}
+
+.contact__wrapper {
+    padding: 30px 60px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+}
+
+.contact__title {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--background-grey);
+}
+
+.contact__title > span {
+    color: var(--background-primary);
+}
+
+.contact__mail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: var(--background-grey);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 400px;
+}
+
+.contact__content > i {
+    margin-left: 20px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.contact__content::before {
+    background-color: var(--background-primary);
+    padding: 15px 25px;
+}
+
+.contact__input {
+    width: 80%;
+    display: block;
+    margin-right: 35px;
+    padding: 15px 25px 15px 0px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--text-light-color);
+    border: none;
+    outline: none;
+}
+
+.contact__send {
+    display: block;
+    margin-left: 8px;
+    background-color: transparent;
+    border: none;
+    color: var(--background-grey);
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact__send > i {
+    margin-left: 5px;
+    color: var(--primary-color);
+}
+
+.contact__send.skew-background::before {
+    background-color: var(--background-primary);
+    transition: .3s;
+}
+
+.contact__send:hover {
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+.contact__send:hover.skew-background::before {
+    background-color: var(--background-grey);
+}
+
+/*
+
+    ? FOOTER
+
+*/
+
+.footer {
+    position: relative;
+    transform: translateY(-114px);
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-primary);
 }

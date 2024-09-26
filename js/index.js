@@ -109,11 +109,7 @@ let lazyLoadingFunction = function (lazy, notLazy, percengeElement, count) {
     /**
      *  ! Slider Blog
      */
-
-const blogList = document.querySelector('#blogList');
-const blogItem = document.querySelectorAll('.blog__item');
-const leftBtn = document.querySelector('#leftBtn');
-const rightBtn = document.querySelector('#rightBtn')
+import { blogItem, leftBtn, rightBtn } from './module.js';
 
 var distance = 0;
 var maxClick = parseInt(blogItem.length / 3) - (blogItem.length % 3 ? 0 : 1);
