@@ -152,6 +152,20 @@ rightBtn.addEventListener('click', () => {
     autoSlide = setInterval(sliderToRight, 3500);
 });
 
+document.addEventListener('click', function(event) {
+    const click = document.createElement('div');
+    click.classList.add('click');
+    document.body.appendChild(click);
+  
+    click.style.left = `${event.pageX}px`;
+    click.style.top = `${event.pageY}px`;
+  
+    // TODO: Xóa các phần tử sau khi hiệu ứng mờ dần hoàn tất
+    setTimeout(() => {
+      click.remove();
+    }, 800); // TODO: 300 khớp với thời gian animation
+});
+  
 
 lazyLoadingFunction('.live__video', 'keyframe-fade-in-up');
 lazyLoadingFunction('.banner__under', 'keyframe-blur-scale');
