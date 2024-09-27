@@ -13,6 +13,7 @@ body {
     font-family: var(--font-family);
     width: 100vw;
     overflow-x: hidden;
+    background-color: var(--background-primary);
 }
 
 .skew-background {
