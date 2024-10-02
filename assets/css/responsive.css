@@ -1,0 +1,20 @@
+@media screen and (max-width: 1199.98px) {
+    /* TODO: HEADER */
+
+    .header__logo {
+        width: 330px;
+    }
+
+    .header__lang-list.menu__wrapper {
+        margin-right: 100px;
+    }
+
+    .header__lang-item.menu__item {
+        width: 120px;
+    }
+
+    .header__lang-list.menu__wrapper::before {
+        top: -17px;
+        width: 100%;
+    }
+}
