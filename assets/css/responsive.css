@@ -18,3 +18,83 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 991.98px) {
+    /* TODO: HEADER */
+
+    .header__logo {
+        width: 290px;
+    }
+
+    .header__offer-day {
+        padding: 4px 9px;
+        font-size: 1.4rem;
+    }
+
+    .header__offer {
+        font-size: 1.3rem;
+    }
+
+    .header__follow {
+        font-size: 1.3rem;
+    }
+
+    .header__list-item {
+        display: flex;
+    }
+
+    .header__list-item > a {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .header__list-item.search {
+        width: 35px;
+        height: 35px;
+        margin-left: 4px;
+    }
+    
+    .header__list-item.shopping-cart > i,
+    .header__list-item.search > i {
+        font-size: 1.2rem;
+    }
+
+    .header__logo-link {
+        font-size: 2.5rem;
+    }
+
+    .header__info {
+        width: 90px;
+    }
+
+    .header__live {
+        width: 46px;
+    }
+    
+    .header__list-item.header__info > a,
+    .header__list-item.header__live > a {
+        height: 38px;
+        margin-top: 2px;
+        /* margin-top: 10px; */
+    }
+
+    .header__lang-list.menu__wrapper::before {
+        top: -21px;
+    }
+}
+
+@media screen and (max-width: 840.98px) {
+    .header__logo {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .header__logo {
+        width: 330px;
+    }
+
+    .header__list {
+        display: none;
+    }
+}
