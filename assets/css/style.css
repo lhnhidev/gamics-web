@@ -194,6 +194,10 @@
     color: var(--primary-color);
 }
 
+.header__bar.header__list-item {
+    display: none;
+}
+
 #globeBtn:hover > i {
     margin-top: 13px;
 }
