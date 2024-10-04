@@ -186,3 +186,14 @@ lazyLoadingFunction('.weapon__img', 'animate__fadeInRight');
 lazyLoadingFunction('.maps__background', 'animate__fadeInRight');
 lazyLoadingFunction('.maps__content', 'animate__fadeInLeft');
 lazyLoadingFunction('.shop__product', 'animate__pulse');
+
+    /**
+     *  ! Menu for mobile
+     * 
+     */
+
+import { barBtn, menuMobile } from './module.js';
+
+barBtn.addEventListener('click', () => {
+    menuMobile.classList.toggle('hidden');
+});

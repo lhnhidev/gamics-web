@@ -17,13 +17,39 @@
         top: -17px;
         width: 100%;
     }
+
+    /* TODO: BANNER */
+    .banner__over {
+        top: 50%;
+    }
+
+    .banner__img {
+        width: 300px;
+    }
+
+    .banner__slogan > #slogan {
+        font-size: 2rem;
+    }
+
+    .banner__slogan > #cursor {
+        height: 25px;
+    }
+
+    .banner__download {
+        font-size: 2rem;
+        padding: 10px 22px;
+    }
+
+    .banner__button {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 991.98px) {
     /* TODO: HEADER */
 
     .header__logo {
-        width: 290px;
+        width: 310px;
     }
 
     .header__offer-day {
@@ -41,6 +67,10 @@
 
     .header__list-item {
         display: flex;
+    }
+
+    .header__list-item:hover > i {
+        margin-top: -2px;
     }
 
     .header__list-item > a {
@@ -80,11 +110,50 @@
     .header__lang-list.menu__wrapper::before {
         top: -21px;
     }
+
+    #globeBtn:hover > i {
+        margin-top: 12px;
+    }
+
+    /* TODO: BANNER */
+    .banner__img {
+        width: 250px;
+    }
+
+    .banner__button {
+        display: none;
+    }
+
+    .banner__over {
+        top: calc(50% - 25px);
+    }
 }
 
 @media screen and (max-width: 840.98px) {
     .header__logo {
         width: 230px;
+    }
+
+    .header__top {
+        height: 50px;
+    }
+
+    .header__bottom {
+        height: 50px;
+    }
+
+    .header__list-item > a {
+        padding: 5px 10px;
+    }
+
+    .header__list-item.header__info > a,
+    .header__list-item.header__live > a {
+        height: 30px;
+        margin-top: 7px;
+    }
+
+    .header__bottom {
+        height: 60px;
     }
 }
 
@@ -92,6 +161,13 @@
     /* TODO: HEADER */
     .header__top {
         display: none;
+    }
+
+    .header__bottom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
     .header__logo {
@@ -116,8 +192,8 @@
         font-size: 1.6rem;
     }
 
-    #globeBtn:hover > i {
-        margin-top: 12px;
+    .header__lang-list.menu__wrapper {
+        margin-right: 0;
     }
 }
 
@@ -126,7 +202,12 @@
     .header__logo {
         width: 190px;
     }
+
+    .header__lang-list.menu__wrapper {
+        margin-right: 20px;
+    }
 }
+    
 
 @media screen and (max-width: 400.98px) {
     /* TODO: HEADER */
@@ -146,5 +227,14 @@
 
     .header__list-item.search > i {
         font-size: 1.4rem;
+    }
+
+    .header__lang-list.menu__wrapper {
+        margin-right: 40px;
+    }
+
+    .header__lang-list.menu__wrapper::before {
+        top: -19px;
+        height: 23px;   
     }
 }

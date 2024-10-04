@@ -263,6 +263,48 @@
 
 /*
 
+    TODO: HEADER LIST MOBILE
+
+*/
+.header__list-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.header__list-item-mobile {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    background-color: var(--background-primary);
+}
+
+.header__list-item-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-light-color);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.header__list-item-link:hover {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--text-dark-color);
+    transition: .3s;
+}
+
+/*
+
     TODO: SEARCH
 
 */
@@ -357,7 +399,7 @@
 
 .banner__over {
     position: absolute;
-    top: calc(50% + 100px);
+    top: calc(50% + 90px);
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
